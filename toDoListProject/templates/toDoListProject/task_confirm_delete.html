@@ -1,0 +1,13 @@
+{% extends 'toDoListProject/main.html' %}
+
+{% block content %}
+    <div class="container">
+        <form action="" method="post" class="mt-5">
+            {% csrf_token %}
+            <p>Are you sure?</p>
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+
+        <a href="{% url 'tasks' %}" class="btn btn-secondary mt-3">Return</a>
+    </div>
+{% endblock %}

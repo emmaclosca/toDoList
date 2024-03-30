@@ -1,0 +1,55 @@
+{% extends 'toDoListProject/main.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="mt-5">My To Do List</h1>
+       
+        <div>
+            {% if request.user.is_authenticated %}
+                <p>{{ request.user }}</p>
+                <form action="{% url 'logout' %}" method="post" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-primary">Logout</button>
+                </form>
+            {% else %}
+                <form action="{% url 'login' %}" method="get" class="d-inline">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            {% endif %}
+            
+            <form action="" method="get">
+                <input type="text" name="search-area" placeholder="Search Tasks ">
+                <input class="button" type="submit" value="Search Task">
+            </form>
+
+            <a href="{% url 'addTask' %}" class="btn btn-success ml-2">Add new item</a>
+        </div>
+    </div>
+
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in tasks %}
+            <tr>
+                <td>{{ task.title }}</td>
+                <td>
+                    <a href="{% url 'taskDetail' task.id %}" class="btn btn-info">View</a>
+                    <a href="{% url 'updateTask' task.id %}" class="btn btn-warning">Update</a>
+                    <a href="{% url 'deleteTask' task.id %}" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="2"><h3>No items in the list.</h3></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}
