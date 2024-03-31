@@ -10,6 +10,7 @@ from django.views.generic.edit import FormView
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth import login
+from django.db import connection
 
 # to complete this to do list project I have used this video as guidance -> https://www.youtube.com/watch?v=GRz3pcU89qU&t=300s
 
@@ -29,9 +30,12 @@ class Tasks(LoginRequiredMixin, ListView):
             context['search_input'] = search_input
         return context
      
+
+# Task detail is vulnerable to sensitive data exposure as you are able to view other users task descriptions 
 class TaskDetail(DetailView):
     model = Task
     context_object_name = 'task'
+
     
 class AddTask(CreateView):
     model = Task
@@ -42,15 +46,18 @@ class AddTask(CreateView):
         form.instance.user = self.request.user
         return super(AddTask, self).form_valid(form)
     
+    
 class UpdateTask(UpdateView):
     model = Task
     fields = ['title', 'description', 'complete']
     success_url = reverse_lazy('tasks')
     
+
 class DeleteTask(DeleteView):
     model = Task
     context_object_name = 'task'
     success_url = reverse_lazy('tasks')
+    
     
 class UserLogin(LoginView):
     template_name = 'toDoListProject/login.html'
@@ -60,6 +67,7 @@ class UserLogin(LoginView):
     def get_success_url(self):
         return reverse_lazy('tasks')
     
+
 class UserSignUp(FormView):
     template_name = 'toDoListProject/register.html'
     form_class = UserCreationForm
@@ -77,4 +85,6 @@ class UserSignUp(FormView):
             return redirect('tasks')
         return super(UserSignUp, self).get(*args, **kwargs)
     
+
+
     

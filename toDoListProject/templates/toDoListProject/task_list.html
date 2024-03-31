@@ -25,7 +25,7 @@
 
             <a href="{% url 'addTask' %}" class="btn btn-success ml-2">Add new item</a>
         </div>
-    </div>
+    </div> 
 
     <table class="table table-striped mt-3">
         <thead>
@@ -39,9 +39,13 @@
             <tr>
                 <td>{{ task.title }}</td>
                 <td>
-                    <a href="{% url 'taskDetail' task.id %}" class="btn btn-info">View</a>
-                    <a href="{% url 'updateTask' task.id %}" class="btn btn-warning">Update</a>
-                    <a href="{% url 'deleteTask' task.id %}" class="btn btn-danger">Delete</a>
+                    {% if task.id %}
+                        <a href="{% url 'taskDetail' task.id %}" class="btn btn-info">View</a>
+                        <a href="{% url 'updateTask' task.id %}" class="btn btn-warning">Update</a>
+                        <a href="{% url 'deleteTask' task.id %}" class="btn btn-danger">Delete</a>
+                    {% else %}
+                        <span class="btn btn-secondary">No Action Available</span>
+                    {% endif %}
                 </td>
             </tr>
             {% empty %}
@@ -51,5 +55,14 @@
             {% endfor %}
         </tbody>
     </table>
+
+    <!-- xss attack script
+    <p id="maliciousScript"></p>
+    <script>
+        // Stored XSS
+        var maliciousScript = document.createElement('script');
+        maliciousScript.textContent = "alert('Stored XSS Attack!');";
+        document.getElementById('maliciousScript').appendChild(maliciousScript);
+    </script>  -->
 </div>
 {% endblock content %}
