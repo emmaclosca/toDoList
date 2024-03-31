@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'toDoListProject.middleware.Security',
 ]
 
 ROOT_URLCONF = 'toDoList.urls'
@@ -69,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'toDoList.wsgi.application'
+
 
 
 # Database
@@ -125,3 +126,30 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = 'login'
+
+# guidance from -> https://medium.com/@torkashvand/a-comprehensive-guide-to-logging-in-django-e041f311bcb7#:~:text=Django's%20logging%20framework%20is%20built,entry%20point%20for%20logging%20messages.
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'django.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'WARNING',  
+            'propagate': True,
+        },
+        'toDoListProject': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': False,  
+        },
+    },
+}
+
+

@@ -1,0 +1,53 @@
+Not Found: /myView
+"GET /myView HTTP/1.1" 404 3677
+This is an informational message.
+This is a debug message.
+This is a warning message.
+This is an error message.
+This is a critical message.
+Internal Server Error: /myView/
+Traceback (most recent call last):
+  File "C:\Users\x20514449\Documents\toDoList\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\x20514449\Documents\toDoList\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\x20514449\Documents\toDoList\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view toDoListProject.views.my_view didn't return an HttpResponse object. It returned None instead.
+"GET /myView/ HTTP/1.1" 500 68784
+This is an informational message.
+This is a debug message.
+This is a warning message.
+This is an error message.
+This is a critical message.
+This is an informational message.
+This is a debug message.
+This is a warning message.
+This is an error message.
+This is a critical message.
+This is an informational message.
+This is a debug message.
+This is a warning message.
+This is an error message.
+This is a critical message.
+This is an informational message.
+This is a debug message.
+This is a warning message.
+This is an error message.
+This is a critical message.
+Account has been created
+Task has been created
+Task has been created
+Task has been created
+Task has been created
+User has logged in
+Invalid form submitted for user registration
+Invalid form submitted for user registration
+Invalid form submitted for user registration
+Account has been created
+Task has been created
+Task has been updated
+Task has been updated
+Task has been created
+User has logged in
