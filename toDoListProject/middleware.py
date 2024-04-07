@@ -12,9 +12,6 @@ class Security(MiddlewareMixin):
         response["X-XSS-Protection"] = "1; mode=block"
         response["X-Content-Type-Options"] = "nosniff"
         response["X-Frame-Options"] = "DENY"
-       
-        # Add security headers for SQL injection
-        response["X-SQL-Injection-Protection"] = "1"
         
         # Add security headers for sensitive data exposure
         response["Referrer-Policy"] = "strict-origin-when-cross-origin"

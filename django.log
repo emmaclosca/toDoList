@@ -51,3 +51,204 @@ Task has been updated
 Task has been updated
 Task has been created
 User has logged in
+User has logged in
+Task has been created
+Task has been updated
+Not Found: /robots.txt
+"GET /robots.txt HTTP/1.1" 404 3517
+Not Found: /robots.txt
+"GET /robots.txt HTTP/1.1" 404 3517
+User has logged in
+Not Found: /robots.txt
+"GET /robots.txt HTTP/1.1" 404 3517
+Not Found: /robots.txt
+"GET /robots.txt HTTP/1.1" 404 3517
+User has logged in
+Not Found: /struts2-showcase/struts/utils.js
+Not Found: /js/
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /struts2-showcase/struts/tooltip.gif
+Not Found: /struts2-showcase/struts/domtt.css
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /struts2-showcase/struts/domTT.js
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /struts2-showcase/struts/inputtransfersselect.js
+Not Found: /api/v2/${jndi:dns://MDEDiscovery051e0ae624SeenInTheWildGet-8000}
+Not Found: /api/
+Not Found: /index.html
+Not Found: /:undefined
+Forbidden (CSRF cookie not set.): /
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /cgi-bin/
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /cgi-bin/
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "C:\Users\x20514449\Documents\toDoList\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\x20514449\Documents\toDoList\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\x20514449\Documents\toDoList\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\x20514449\Documents\toDoList\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3520
+Forbidden (Origin checking failed - https://127.0.0.1:8000 does not match any trusted origins.): /login/
+"POST /login/?next=/ HTTP/1.1" 403 2569
+Not Found: /struts2-showcase/struts/utils.js
+Not Found: /js/
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /:undefined
+Not Found: /struts2-showcase/struts/tooltip.gif
+Not Found: /:undefined
+Not Found: /struts2-showcase/struts/domtt.css
+Not Found: /:undefined
+Not Found: /struts2-showcase/struts/domTT.js
+Not Found: /api/
+Not Found: /struts2-showcase/struts/inputtransfersselect.js
+Not Found: /index.html
+Not Found: /api/v2/${jndi:dns://MDEDiscovery051e0ae624SeenInTheWildGet-8000}
+Not Found: /:undefined
+Forbidden (CSRF cookie not set.): /
+Not Found: /:undefined
+Not Found: /:undefined
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "C:\Users\x20514449\Documents\toDoList\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\x20514449\Documents\toDoList\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\x20514449\Documents\toDoList\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\x20514449\Documents\toDoList\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3520
+User has logged in
+User has logged in
+User has logged in
+Task has been updated
+Error with credentials for user registration
+Error with credentials for user registration
+Error with credentials for user registration
+Error with credentials for user registration
+Error with credentials for user registration
+Account has been created
+Task has been created
+Task has been created
+Task has been created
+Task has been updated
+Task has been updated
+Task has been updated
+Task has been updated
+Error with credentials for user registration
+Account has been created
+User has logged in
+Task has been created
+Task has been created
+Task has been created
+Task has been updated
+Task has been deleted
+Task has been created
+Task has been updated
+Unauthorized access attempt to task details
+Internal Server Error: /tasks/10/
+Traceback (most recent call last):
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\x20514449\Documents\toDoList\toDoList\toDoListProject\views.py", line 51, in get
+    return redirect('unauthorized_access')
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\urls\resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'unauthorized_access' not found. 'unauthorized_access' is not a valid view function or pattern name.
+"GET /tasks/10/ HTTP/1.1" 500 99536
+Task has been created
+Task has been updated
+Task has been deleted
+Task has been created
+Task has been updated
+User has logged in
+Unauthorized access attempt to task details
+Internal Server Error: /tasks/2/
+Traceback (most recent call last):
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\x20514449\Documents\toDoList\toDoList\toDoListProject\views.py", line 51, in get
+    return redirect('unauthorized_access')
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\urls\resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'unauthorized_access' not found. 'unauthorized_access' is not a valid view function or pattern name.
+"GET /tasks/2/ HTTP/1.1" 500 99789
+Unauthorized access attempt to task details
+Internal Server Error: /tasks/26/
+Traceback (most recent call last):
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\x20514449\Documents\toDoList\toDoList\toDoListProject\views.py", line 51, in get
+    return redirect('unauthorized_access')
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\x20514449\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\django\urls\resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'unauthorized_access' not found. 'unauthorized_access' is not a valid view function or pattern name.
+"GET /tasks/26/ HTTP/1.1" 500 99534
+Error with credentials for user registration
+User has logged in
